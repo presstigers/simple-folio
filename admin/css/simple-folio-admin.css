@@ -1,0 +1,279 @@
+/**
+ * CSS of admin-specific functionality
+ */
+
+
+/* General 
+==============================================================*/
+
+.wrap div.updated, 
+.wrap div.error {
+    margin: 15px 0;
+}
+.simple-folio-help-icon {
+    background: url(../images/sprite.png) no-repeat -20px -20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;	
+    margin: 0 0 0 10px;
+    opacity: 0.5;
+    vertical-align: top;
+    width: 20px;
+}
+.simple-folio-help-icon:hover {
+    opacity: 1;
+}
+
+
+/* "Simple Folio -> Settings" page 
+==============================================================*/
+
+body.simple-folio_item_page_simple-folio_settings { 
+    overflow-y: scroll;
+}
+.simple-folio-ps-header,
+.simple-folio-ps-section {
+    min-width: 940px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* content */
+
+.simple-folio-ps-content {
+    display: none;
+    padding: 12px 48px 24px 12px;
+}
+.simple-folio-ps-tab {
+    float: left;
+    margin-top: 12px;
+    width: 50%;
+}
+.simple-folio-ps-tab .form-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    padding-right: 20px;
+}
+.simple-folio-ps-content hgroup {
+    border-left: 5px solid #0085ba;
+    padding-left: 12px;
+}
+.simple-folio-ps-content hgroup h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 1em 0;
+}
+.simple-folio-ps-content hgroup h4 {	
+    color: #999;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.simple-folio-ps-content .title + .description {
+    margin-bottom: 12px;
+}
+.simple-folio-ps-content label + label {
+    margin-left: 10px;
+}
+.simple-folio-ps-content .simple-folio-ps-footer {
+    border-top: 1px solid #eee;
+    margin: 2em 0 1em;
+    padding-top: 24px;
+}
+.simple-folio-ps-content .simple-folio-ps-cancel.button-secondary {
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .simple-folio-ps-tab {
+        width: 100%;
+    }
+}
+
+/* grid */
+
+.simple-folio-ps-grid {
+    margin: 0;
+    padding: 0;
+}
+.simple-folio-ps-grid > li {
+    border-left: 1px solid #fafafa;
+    border-right: 1px solid #dfdfdf;
+    float: left;
+    line-height: 24px;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.simple-folio-ps-grid .simple-folio-ps-open {
+    width: 5%;
+}
+.simple-folio-ps-grid .simple-folio-ps-name {
+    width: 20%;
+}
+.simple-folio-ps-grid .simple-folio-ps-shortcode {
+    width: 25%;
+}
+.simple-folio-ps-grid .simple-folio-ps-group {
+    width: 20%;
+}
+.simple-folio-ps-grid .simple-folio-ps-actions {
+    width: 30%;
+}
+
+/* header */
+
+.simple-folio-ps-header {
+    background-color: #0085ba;
+    color: #eee;
+    font-weight: bold;    
+    text-shadow: 0 -1px rgba(0,0,0,0.3);
+    padding: 10px 0 10px 0;
+}
+.simple-folio-ps-header > li {
+    border: 0;
+    height: 30px;
+    padding: 3px 10px;
+}
+
+/* Setting left section */
+.simple-folio-settings-left-sec{
+    width: 15%;
+    float: left;
+}
+
+/* Setting right section */
+.simple-folio-settings-right-sec{
+    width: 80%;
+    float: left;
+    margin-left: 20px;
+}
+
+
+/* main */
+
+.simple-folio-ps-main {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #dfdfdf;
+    overflow: hidden;
+}
+.simple-folio-ps-main > li {
+    height: 48px;
+    padding: 12px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #fdfdfd;
+}
+.simple-folio-ps-main > li:first-child {
+    border-left: 0;
+}
+.simple-folio-ps-main > li:last-child {
+    border-right: 0;
+}
+.simple-folio-ps-main .simple-folio-help-icon {
+    margin-top: 2px;
+}
+
+/* components */
+
+.simple-folio-ps-open {
+    text-align: center;
+}
+.simple-folio-ps-open span {
+    background: url(../images/sprite.png) no-repeat 0 0;
+    display: inline-block;
+    height: 20px;
+    margin-top: 2px;
+    width: 20px;
+}
+.simple-folio-ps-main:hover .simple-folio-ps-open span {
+    background-position: 0 -20px;
+}
+.simple-folio-ps-opened .simple-folio-ps-open span {
+    background-position: -20px 0;
+}
+.simple-folio-ps-name a {
+    font-weight: bold;
+}
+.simple-folio-ps-actions label {
+    color: #999;
+}
+.simple-folio-ps-actions input[type="checkbox"] {
+    margin-left: 3px;
+}
+.simple-folio-ps-actions form {
+    float: left;
+    margin-right: 10px;
+}
+
+/*
+* Settings
+*/
+.sfo-section{
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.sfo-content{
+    width: 500px;
+}
+@media (min-width: 320px) and (max-width: 768px){
+    .sfo-content{
+        width: 100%;
+    }    
+}
+.sfo-content p{
+    margin-bottom: 0;
+}
+.sfo-form-group:first-child{
+    padding-top:0;
+    padding-bottom:10px;
+}
+.sfo-form-group{
+    padding: 10px 0;
+    height: 28px;
+}
+@media (min-width: 320px) and (max-width: 768px){
+    .sfo-form-group{
+        height: inherit;
+    }
+}
+.sfo-form-group:last-child{
+    padding-top:10px;
+    padding-bottom:0;
+}
+.sfo-form-group input{
+    float: right;
+}
+@media (min-width: 320px) and (max-width: 768px){
+    .sfo-form-group input{
+        float: none;
+        width: 100%;
+    }
+}
+
+/*--------------------------
+# Colors
+----------------------------*/
+.sfo-section{
+    background-color:#f9f9f9;
+}
+/*--------------------------
+# Typography
+----------------------------*/
+.sfo-admin-settings h3.first{
+    margin: 32px 1px 18px 0;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.sfo-admin-settings h3{
+    margin:20px 1px 20px;
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+}
